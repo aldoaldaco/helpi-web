@@ -1,0 +1,41 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="helpi-web.html">
+<link rel="import" href="helpi-web-services.html">
+<link rel="import" href="helpi-web-experts.html">
+<link rel="import" href="helpi-web-reviews.html">
+<link rel="import" href="helpi-web-about.html">
+
+<dom-module id="helpi-web-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <helpi-web></helpi-web>
+    <helpi-web-services></helpi-web-services>
+    <helpi-web-experts></helpi-web-experts>
+    <helpi-web-reviews></helpi-web-reviews>
+    <helpi-web-about></helpi-web-about>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class HelpiWebApp extends Polymer.Element {
+      static get is() { return 'helpi-web-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'helpi-web-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(HelpiWebApp.is, HelpiWebApp);
+  </script>
+</dom-module>

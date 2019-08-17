@@ -1,0 +1,102 @@
+<dom-module id="helpi-web-reviews">
+  <template>
+    <style>
+      main {
+        height: 100vh;
+        width: 100%;
+        padding: 4rem 0 4rem 0;
+        color: var(--helpi-color-four);
+        background-color: var(--helpi-color-seven);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      section {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+      }
+      .item {
+        width: auto;
+        margin: 5rem 0 4rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        border: 3px solid var(--helpi-color-five);
+      }
+      .description {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+      .quote {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+      }
+      h1, h3 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: var(--helpi-color-five);
+      }
+      span {
+        font-size: 2.5rem;
+        font-style: italic;
+      }
+      p {
+        margin: 0.4rem auto auto auto;
+      }
+      @media screen and (max-width: 1000px) {
+        section {
+          width: 85%;
+        }
+      }
+    </style>
+    <main>
+      <h1>Te brindamos el mejor servicio con ayuda de los mejores helpers</h1>
+      <section>
+        <div class="step">
+          <div class="item">
+            <img src="../../images/man.jpeg" alt="checkmark info">
+          </div>
+          <div class="description">
+            <h3>Juanito Perez</h3>
+            <div class="quote">
+              <p><span>"</span>&nbsp;Los expertos de helpi son totalmente calificados me encanto su servicio.&nbsp;<span>"</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="item">
+            <img src="../../images/woman.jpg" alt="checkmark info">
+          </div>
+          <div class="description">
+            <h3>Imelda Gonzalez</h3>
+            <div class="quote">
+              <p><span>"</span>&nbsp; Con helpi he incrementado mis ingresos y ahora tengo más y mejor trabajo.&nbsp;<span>"</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </template>
+  <script>
+    class HelpiWebReviews extends Polymer.Element {
+      static get is() {
+        return `helpi-web-reviews`;
+      }
+    }
+    window.customElements.define(HelpiWebReviews.is, HelpiWebReviews);
+  </script>
+</dom-module>

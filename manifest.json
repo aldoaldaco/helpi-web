@@ -1,0 +1,7 @@
+{
+  "name": "helpi-web",
+  "short_name": "helpi-web",
+  "description": "web platform",
+  "start_url": "/",
+  "display": "standalone"
+}

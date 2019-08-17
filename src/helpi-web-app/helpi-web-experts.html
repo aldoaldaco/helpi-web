@@ -1,0 +1,170 @@
+<dom-module id="helpi-web-experts">
+  <template>
+    <style>
+      main {
+        height: 100vh;
+        width: 100%;
+        padding: 4rem 0 0 0;
+        margin: 0 auto;
+        background-color: var(--helpi-color-five);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      section {
+        height: 300px;
+        width: 70%;
+        margin: 1.5rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .left {
+        margin-bottom: 0;
+      }
+      .right {
+        margin-top: 0;
+      }
+      .step {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .item {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .item-one {
+        /*background: url("../../images/docs.png") center no-repeat;*/
+        background-size: 150px 150px;
+      }
+      .item-two {
+        /*background: url("../../images/acta.png") center no-repeat;*/
+        background-size: 150px 150px;
+      }
+      .item-three {
+        /*background: url("../../images/contrato.png") center no-repeat;*/
+        background-size: 150px 150px;
+      }
+      .item-four {
+        /*background: url("../../images/certificado.png") center no-repeat;*/
+        background-size: 150px 150px;
+      }
+      .check {
+        width: 100%;
+        position: relative;
+        display: block;
+        text-align: left;
+      }
+      .check img {
+        position: absolute;
+        top: -2rem;
+        right: 0;
+        height: 4rem;
+      }
+      .icon img {
+        height: 12rem;
+      }
+      .description {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        font-size: 1.5rem;
+        font-weight: lighter;
+      }
+      @media screen and (max-width: 1000px) {
+        section {
+          width: 85%;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .step {
+          flex-direction: column;
+        }
+      }
+    </style>
+    <main>
+      <h1>Te brindamos el mejor servicio con ayuda de los mejores helpers</h1>
+      <section class="left">
+        <div class="step">
+          <div class="item item-one">
+            <div class="check">
+              <img src="../../images/checkmark.png" alt="checkmark info">
+            </div>
+            <div class="icon">
+              <img src="../../images/docs.png" alt="docs info">
+            </div>
+          </div>
+          <div class="description">
+            <h3>Información personal</h3>
+            <p>Nuestros profesionales cuantan con un perfil completo de información personal.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="item item-two">
+            <div class="check">
+              <img src="../../images/checkmark.png" alt="checkmark info">
+            </div>
+            <div class="icon">
+              <img src="../../images/acta.png" alt="docs info">
+            </div>
+          </div>
+          <div class="description">
+            <h3>Reporte de antecedentes penales</h3>
+            <p>Nuestros profesionales cuantan con un perfil completo de información personal.</p>
+          </div>
+        </div>
+      </section>
+      <section class="right">
+        <div class="step">
+          <div class="item item-three">
+            <div class="check">
+              <img src="../../images/checkmark.png" alt="checkmark info">
+            </div>
+            <div class="icon">
+              <img src="../../images/contrato.png" alt="docs info">
+            </div>
+          </div>
+          <div class="description">
+            <h3>Cartas de recomendación</h3>
+            <p>Nuestros profesionales cuantan con un perfil completo de información personal.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="item item-four">
+            <div class="check">
+              <img src="../../images/checkmark.png" alt="checkmark info">
+            </div>
+            <div class="icon">
+              <img src="../../images/certificado.png" alt="checkmark info">
+            </div>
+          </div>
+          <div class="description">
+            <h3>Calificación de usuarios</h3>
+            <p>Nuestros profesionales cuantan con un perfil completo de información personal.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </template>
+  <script>
+    class HelpiWebExperts extends Polymer.Element {
+      static get is() {
+        return `helpi-web-experts`;
+      }
+    }
+    window.customElements.define(HelpiWebExperts.is, HelpiWebExperts);
+  </script>
+</dom-module>

@@ -1,0 +1,141 @@
+<dom-module id="helpi-web-services">
+  <template>
+    <style>
+      main {
+        padding: 4rem 0 4rem 0;
+        width: 100%;
+      }
+      h1 {
+        color: var(--helpi-one);
+        text-align: center;
+        margin: 0 0 4rem 0;
+        font-size: 2rem;
+      }
+      .step {
+        margin: 2.5rem auto;
+        height: 20rem;
+        width: 70%;
+        background-color: var(--helpi-color-five);
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        box-shadow: 0 0 4px 2px rgba(238, 88, 65, 0.4);
+      }
+      .step:first-child {
+        margin: 0 auto;
+      }
+      .step:last-child {
+        margin: 0 auto;
+      }
+      .number {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-color: var(--helpi-one);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.2rem;
+        font-weight: bold;
+      }
+      .item {
+        margin: 0 5rem;
+        height: 100%;
+        width: 50%;
+      }
+      .item-one {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background: url("../../images/construccion.svg") center no-repeat;
+        background-size: contain;
+      }
+      .item-two {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: url("../../images/profe.png") center no-repeat;
+        background-size: contain;
+      }
+      .item-three {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background: url("../../images/payment.jpg") center no-repeat;
+        background-size: contain;
+      }
+      .description {
+        margin: 0 5rem;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+      }
+      .description h3 {
+        letter-spacing: 0.2rem;
+        line-height: 1rem;
+        font-weight: bolder;
+        color: var(--helpi-color-zero);
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-color: var(--helpi-one);
+      }
+      @media screen and (max-width: 1000px) {
+        .step {
+          width: 85%;
+        }
+        .step:last-child {
+          margin: 0 auto 50px auto;
+        }
+      }
+
+    </style>
+    <main>
+      <h1>Te brindamos el mejor servicio con ayuda de los mejores helpers</h1>
+      <section class="step">
+        <div class="item item-one">
+          <span class="number">1</span>
+        </div>
+        <div class="description">
+          <h3>Selecciona un servicio</h3>
+          <p>El primer paso es seleccionar el servicio que necesitas.</p>
+        </div>
+      </section>
+      <section class="step">
+        <div class="description">
+          <h3>Elige al experto</h3>
+          <p>Selecciona uno de todos nuestros expertos sobre el servicio.</p>
+        </div>
+        <div class="item item-two">
+          <span class="number">2</span>
+        </div>
+      </section>
+      <section class="step">
+        <div class="item item-three">
+          <span class="number">3</span>
+        </div>
+        <div class="description">
+          <h3>Realizá tu pago</h3>
+          <p>Paga con el metodo que mas te convenga.</p>
+        </div>
+      </section>
+    </main>
+  </template>
+  <script>
+    class HelpiWebServices extends Polymer.Element {
+      static get is() {
+        return `helpi-web-services`;
+      }
+    }
+    window.customElements.define(HelpiWebServices.is, HelpiWebServices);
+  </script>
+</dom-module>

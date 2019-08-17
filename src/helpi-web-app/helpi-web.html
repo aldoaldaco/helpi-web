@@ -1,0 +1,192 @@
+<dom-module id="helpi-web">
+  <template>
+    <style>
+      main {
+        height: 100vh;
+        width: 100%;
+        background-color: var(--helpi-one);
+        color: var(--helpi-color-four);
+      }
+      h1, h3 {
+        margin: 0;
+      }
+      h1 {
+        width: 70%;
+        margin: 0 auto 2rem;
+        padding: 3rem 0 1.5rem 0;
+        color: var(--helpi-color-five);
+        border-bottom: 4px solid var(--helpi-color-five);
+        font-size: 4rem;
+        letter-spacing: 0.8rem;
+      }
+      h3 {
+        text-align: center;
+        letter-spacing: 0.4rem;
+        color: var(--helpi-color-five);
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        letter-spacing: 0.2rem;
+        margin: 1rem;
+        text-align: center;
+        font-size: 2.1rem;
+      }
+      .title {
+        height: 20vh;
+        width: 100%;
+        background-color: var(--helpi-one);
+      }
+      .body {
+        height: calc(80vh - 100px);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 35%;
+      }
+      .paraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 35%;
+      }
+      .logo {
+        height: 300px;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-250px * 7));
+        }
+      }
+      .slider {
+        background-color: var(--helpi-color-five);
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+      .slider::before, .slider::after {
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+      }
+      .slider::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+      }
+      .slider::before {
+        left: 0;
+        top: 0;
+      }
+      .slider .slide-track {
+        background-color: var(--helpi-color-five);
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+      }
+      .slider .slide {
+        background-color: var(--helpi-color-five);
+        height: 100px;
+        width: 250px;
+      }
+      @media screen and (max-width: 1000px) {
+        h1 {
+          width: 85%;
+        }
+        .img {
+          width: 42.5%;
+        }
+        .paraph {
+          width: 42.5%;
+        }
+      }
+
+    </style>
+    <main>
+      <section class="title">
+        <h1>helpi</h1>
+      </section>
+      <section class="body">
+        <div class="img">
+          <img class="logo" src="../../images/services.png" alt="helpi logo">
+        </div>
+        <div class="paraph">
+          <h3>Servicios a tu servicio</h3>
+          <p>¿ Necesitas una mano ?</p>
+        </div>
+      </section>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </template>
+  <script>
+    class HelpiWeb extends Polymer.Element {
+      static get is() {
+        return `helpi-web`;
+      }
+    }
+    window.customElements.define(HelpiWeb.is, HelpiWeb);
+  </script>
+</dom-module>

@@ -1,0 +1,78 @@
+<dom-module id="helpi-web-about">
+  <template>
+    <style>
+      main {
+        width: 100%;
+        color: var(--helpi-color-five);
+      }
+      .navbar {
+        height: 100px!important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--helpi-color-three);
+        font-size: 1.3rem;
+      }
+      .menu {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .copyright {
+        height: 100px!important;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--helpi-two);
+        font-size: 1.2rem;
+      }
+      a {
+        color: var(--helpi-color-five);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      span {
+        font-size: 2.2rem;
+      }
+      img {
+        height: 1.8rem;
+        width: 1.5rem;
+      }
+    </style>
+    <main>
+      <section class="navbar">
+        <div class="menu">
+          <div><a href="#">About</a></div>
+          <div><a href="#">Contact</a></div>
+          <div><a href="#">Advertise</a></div>
+          <div><a href="#">Contribute</a></div>
+          <div><a href="#">Privacy</a></div>
+        </div>
+      </section>
+      <section class="copyright">
+        <p><span>©</span> Copyright Todos los derechos reservados</p>
+        <div>
+          <img src="../../images/facebook.png" alt="facebook link">
+          <img src="../../images/gmail.png" alt="gmail link">
+          <img src="../../images/twitter.png" alt="twitter link">
+        </div>
+        <p>Make with love</p>
+      </section>
+    </main>
+  </template>
+  <script>
+    class HelpiWebAbout extends Polymer.Element {
+      static get is() {
+        return `helpi-web-about`;
+      }
+    }
+    window.customElements.define(HelpiWebAbout.is, HelpiWebAbout);
+  </script>
+</dom-module>
