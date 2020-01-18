@@ -1,33 +1,15 @@
-# \<helpi-web\>
+# Helpi Web
 
-web platform
+##TODO: Migrate app to react(Cindy)
 
-## Install the Polymer-CLI
+### Description
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
+| Helpi web is a platform to request service of any kind  
 
-## Viewing Your Application
 
+### Instructions
+
+```bash
+npm install  
+npm start
 ```
-$ polymer serve
-```
-
-## Building Your Application
-
-```
-$ polymer build
-```
-
-This will create builds of your application in the `build/` directory, optimized to be served in production. You can then serve the built versions by giving `polymer serve` a folder to serve from:
-
-```
-$ polymer serve build/default
-```
-
-## Running Tests
-
-```
-$ polymer test
-```
-
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
